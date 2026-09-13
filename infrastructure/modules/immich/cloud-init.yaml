@@ -1,0 +1,8 @@
+#cloud-config
+package_update: true
+packages:
+  - ca-certificates
+  - curl
+  - ffmpeg
+runcmd:
+  - echo 'Immich container ready for application deployment' > /etc/motd

@@ -1,0 +1,10 @@
+---
+- name: Configure service baseline
+  hosts: homelab
+  become: true
+  tasks:
+    - name: Enable unattended upgrades
+      ansible.builtin.service:
+        name: unattended-upgrades
+        enabled: true
+        state: started

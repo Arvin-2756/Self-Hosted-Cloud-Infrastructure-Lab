@@ -1,0 +1,11 @@
+proxmox_endpoint = "https://proxmox.example.com:8006/"
+proxmox_api_token = "user@pam!automation=replace-me"
+proxmox_insecure  = true
+node_name         = "pve01"
+template_file_id  = "local:vztmpl/debian-12-standard_12.7-1_amd64.tar.zst"
+storage_pool      = "local-zfs"
+network_bridge    = "vmbr0"
+network_gateway   = "192.168.1.1"
+network_cidr      = 24
+domain            = "home.example.com"
+ssh_public_key    = "ssh-ed25519 AAAA... replace-me"

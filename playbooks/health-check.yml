@@ -1,0 +1,7 @@
+---
+- name: Check service hosts
+  hosts: homelab
+  gather_facts: false
+  tasks:
+    - name: Verify SSH connectivity
+      ansible.builtin.ping:

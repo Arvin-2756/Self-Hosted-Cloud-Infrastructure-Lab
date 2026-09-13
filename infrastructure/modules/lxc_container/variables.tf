@@ -1,0 +1,14 @@
+variable "name" { type = string }
+variable "vm_id" { type = number }
+variable "node_name" { type = string }
+variable "template_file_id" { type = string }
+variable "storage_pool" { type = string }
+variable "network_bridge" { type = string }
+variable "ip_address" { type = string }
+variable "network_gateway" { type = string }
+variable "network_cidr" { type = number }
+variable "memory_mb" { type = number }
+variable "cpu_cores" { type = number }
+variable "disk_gb" { type = number }
+variable "description" { type = string }
+variable "ssh_public_key" { type = string }

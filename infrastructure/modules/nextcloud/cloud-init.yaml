@@ -1,0 +1,10 @@
+#cloud-config
+package_update: true
+packages:
+  - ca-certificates
+  - curl
+  - redis-server
+  - mariadb-client
+runcmd:
+  - systemctl enable --now redis-server
+  - echo 'Nextcloud container ready for application deployment' > /etc/motd

@@ -1,0 +1,12 @@
+---
+- name: Prepare homelab containers
+  hosts: homelab
+  become: true
+  tasks:
+    - name: Install baseline packages
+      ansible.builtin.package:
+        name:
+          - curl
+          - ca-certificates
+          - unattended-upgrades
+        state: present
