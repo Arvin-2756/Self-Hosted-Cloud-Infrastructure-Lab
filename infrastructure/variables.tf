@@ -26,13 +26,13 @@ variable "ssh_public_key" { type = string }
 
 variable "service_overrides" {
   description = "Optional per-service overrides for IP, resources, and enablement."
-  type        = map(object({
-    enabled      = optional(bool, true)
-    ip_address   = optional(string)
-    memory_mb    = optional(number)
-    cpu_cores    = optional(number)
-    disk_gb      = optional(number)
-    description  = optional(string)
+  type = map(object({
+    enabled     = optional(bool, true)
+    ip_address  = optional(string)
+    memory_mb   = optional(number)
+    cpu_cores   = optional(number)
+    disk_gb     = optional(number)
+    description = optional(string)
   }))
-  default     = {}
+  default = {}
 }
