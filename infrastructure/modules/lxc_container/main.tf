@@ -1,7 +1,7 @@
 resource "proxmox_virtual_environment_container" "this" {
-  node_name = var.node_name
-  vm_id     = var.vm_id
-  tags      = ["homelab", "managed", var.name]
+  node_name   = var.node_name
+  vm_id       = var.vm_id
+  tags        = ["homelab", "managed", var.name]
   description = var.description
 
   initialization {
