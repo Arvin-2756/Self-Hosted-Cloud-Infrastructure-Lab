@@ -1,4 +1,4 @@
-# Enterprise Homelab Infrastructure
+# Self-Hosted Cloud Infrastructure Lab
 
 A self-hosted virtualization and container orchestration platform built on Proxmox VE, managed entirely through Infrastructure-as-Code using OpenTofu. This homelab serves as a testbed for cloud engineering concepts, self-hosted services, and production-like infrastructure patterns.
 
