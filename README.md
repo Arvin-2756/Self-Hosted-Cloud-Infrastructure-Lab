@@ -1,4 +1,4 @@
-# Enterprise Homelab Infrastructure
+# Self-Hosted Cloud Infrastructure Lab
 
 Production-inspired self-hosted infrastructure managed with OpenTofu on Proxmox VE.
 
